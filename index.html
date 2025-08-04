@@ -2,31 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Streamly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyTube</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="logo">Streamly</h1>
-    <input class="search-bar" type="text" placeholder="Search videos...">
-    <a class="upload-btn" href="upload.html">Upload</a>
+  <header class="yt-header">
+    <div class="left">
+      <span class="menu">&#9776;</span>
+      <h1 class="logo">MyTube</h1>
+    </div>
+    <div class="center">
+      <input class="search" type="text" placeholder="Search" />
+      <button class="search-btn">🔍</button>
+    </div>
+    <div class="right">
+      <a href="upload.html" class="upload-icon">⬆️</a>
+      <span class="notif-icon">🔔</span>
+      <span class="user-icon">👤</span>
+    </div>
   </header>
 
-  <main class="video-grid">
-    <div class="video-card">
-      <img src="https://placehold.co/320x180" alt="Video Thumbnail">
-      <h3>My First Video</h3>
-    </div>
-    <div class="video-card">
-      <img src="https://placehold.co/320x180" alt="Video Thumbnail">
-      <h3>Cool Travel Vlog</h3>
-    </div>
-    <div class="video-card">
-      <img src="https://placehold.co/320x180" alt="Video Thumbnail">
-      <h3>Funny Cat Compilation</h3>
-    </div>
-    <!-- Add more video cards here -->
-  </main>
+  <div class="yt-container">
+    <nav class="sidebar">
+      <a href="#">🏠 Home</a>
+      <a href="#">📺 Subscriptions</a>
+      <a href="#">📚 Library</a>
+    </nav>
+
+    <main class="video-feed">
+      <div class="video-card">
+        <img src="https://placehold.co/320x180" alt="Thumbnail" />
+        <div class="video-info">
+          <div class="avatar">🎥</div>
+          <div class="meta">
+            <h3>Cool Video Title</h3>
+            <p>Channel Name</p>
+            <p>1M views • 2 days ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="https://placehold.co/320x180" alt="Thumbnail" />
+        <div class="video-info">
+          <div class="avatar">🎮</div>
+          <div class="meta">
+            <h3>Gaming Highlights</h3>
+            <p>Player123</p>
+            <p>800K views • 1 week ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more video cards -->
+    </main>
+  </div>
 </body>
 </html>
